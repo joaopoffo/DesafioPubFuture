@@ -1,0 +1,662 @@
+{
+	"info": {
+		"_postman_id": "33a66469-4ccb-4acb-b0cd-69ef90ab2d57",
+		"name": "Treino API RESTful",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Despesa list all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 1,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"batatinhafrita123\",\r\n    \"conta\": 1,\r\n    \"tipoReceita\": \"salário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/despesas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"despesas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Despesa list 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 1,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"batatinhafrita123\",\r\n    \"conta\": 1,\r\n    \"tipoReceita\": \"salário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/despesa/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"despesa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Despesa create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idDespesa\": 1,\r\n    \"dataPagamento\": \"2021-01-29\",\r\n    \"dataPagamentoEsperado\": \"2021-01-29\",\r\n    \"tipoDespesa\": \"educacao\",\r\n    \"conta\": 1,\r\n    \"valor\":20.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/despesa/cadastrar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"despesa",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Despesa delete",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/despesa/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"despesa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta list all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 1,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"batatinhafrita123\",\r\n    \"conta\": 1,\r\n    \"tipoReceita\": \"salário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/contas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"contas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta list 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 1,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"batatinhafrita123\",\r\n    \"conta\": 1,\r\n    \"tipoReceita\": \"salário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/conta/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"conta",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/conta/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"conta",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idConta\": 1,\r\n    \"saldo\": 12.00,\r\n    \"tipoConta\": \"carteira\",\r\n    \"instituicaoFinanceira\": \"Nubank\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/conta/cadastrar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"conta",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"saldo\": 999999.00,\r\n    \"tipoConta\": \"corrente\",\r\n    \"instituicaoFinanceira\": \"C6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/conta/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"conta",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Receita list all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 1,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"batatinhafrita123\",\r\n    \"conta\": 1,\r\n    \"tipoReceita\": \"salário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/receitas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"receitas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Receita list 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 1,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"batatinhafrita123\",\r\n    \"conta\": 1,\r\n    \"tipoReceita\": \"salário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/receita/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"receita",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Receita create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 5,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"janeiro\",\r\n    \"conta\": 1,\r\n    \"valor\":47.0,\r\n   \"tipoReceita\":\"a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/receita/cadastrar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"receita",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Receita update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descricao\": \"marco\",\r\n    \"conta\": 2,\r\n    \"tipoReceita\":\"abc\",\r\n    \"dataRecebimento\": \"2030-01-01\",\r\n    \"dataRecebimentoEsperado\": \"2030-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/receita/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"receita",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Receita delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/receita/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"receita",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Receita list com data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 1,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"batatinhafrita123\",\r\n    \"conta\": 1,\r\n    \"tipoReceita\": \"salário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/receita/1/data/1990-01-01/2025-12-01",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"receita",
+						"1",
+						"data",
+						"1990-01-01",
+						"2025-12-01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Receita list com tipo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 1,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"batatinhafrita123\",\r\n    \"conta\": 1,\r\n    \"tipoReceita\": \"salário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/receita/1/tipo/salario",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"receita",
+						"1",
+						"tipo",
+						"salario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Despesa list com data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 1,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"batatinhafrita123\",\r\n    \"conta\": 1,\r\n    \"tipoReceita\": \"salário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/receita/1/data/1990-01-01/2025-12-01",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"receita",
+						"1",
+						"data",
+						"1990-01-01",
+						"2025-12-01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Despesa list com tipo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 1,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"batatinhafrita123\",\r\n    \"conta\": 1,\r\n    \"tipoReceita\": \"salário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/receita/1/tipo/salario",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"receita",
+						"1",
+						"tipo",
+						"salario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Despesa update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dataPagamento\": \"2022-01-29\",\r\n    \"dataPagamentoEsperado\": \"2022-01-29\",\r\n    \"tipoDespesa\": \"educacao\",\r\n    \"conta\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/despesa/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"despesa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta Transferencia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idContaOrigem\": 1,\r\n    \"idContaDestino\": 2,\r\n    \"valor\": 1.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/conta/transferencia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"conta",
+						"transferencia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta saldo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idReceita\": 1,\r\n    \"dataRecebimento\": \"2021-01-29\",\r\n    \"dataRecebimentoEsperado\": \"2021-01-29\",\r\n    \"descricao\": \"batatinhafrita123\",\r\n    \"conta\": 1,\r\n    \"tipoReceita\": \"salário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/conta/1/saldo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"conta",
+						"1",
+						"saldo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
